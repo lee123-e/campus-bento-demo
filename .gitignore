@@ -1,0 +1,27 @@
+# Maven and local IDE files
+/target/
+/.idea/
+*.iml
+*.log
+
+# Frontend dependencies and build output
+/frontend/node_modules/
+/frontend/dist/
+
+# Local configuration and sessions
+/.local/
+.env
+.env.*
+!.env.example
+*.ser
+*.jks
+*.p12
+*.pem
+*.key
+
+# SQL Server data files and backups
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trn

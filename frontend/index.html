@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>校园便当 · 选择入口</title>
+  </head>
+  <body>
+    <div id="app">
+      <p id="idea-preview-guide" hidden>
+        当前是 IDEA 的 HTML 静态预览。<a href="http://127.0.0.1:5173/">打开校园便当入口</a>
+      </p>
+    </div>
+    <script>
+      if (location.port === '63342' && ['localhost', '127.0.0.1'].includes(location.hostname)) {
+        document.getElementById('idea-preview-guide').hidden = false
+      }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
